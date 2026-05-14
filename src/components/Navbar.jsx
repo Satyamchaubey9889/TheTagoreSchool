@@ -25,7 +25,7 @@ export default function Navbar() {
                         className="h-16 w-28 object-contain"
                     />
 
-                    <h1 className="text-2xl font-extrabold tracking-tight text-[#800000] uppercase hidden sm:block">
+                    <h1 className="text-lg sm:text-2xl font-extrabold tracking-tight text-[#800000] uppercase">
                         The Tagore School
                     </h1>
                 </Link>
