@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-/* ─────────────────────────────────────────────
-   DATA STRUCTURES
-───────────────────────────────────────────── */
 const ADMISSION_STEPS = [
     {
         icon: "description",
@@ -69,9 +66,7 @@ const FEE_PLANS = [
     },
 ];
 
-/* ─────────────────────────────────────────────
-   COMPONENTS
-───────────────────────────────────────────── */
+
 
 const Admissions = () => {
     const [openFaq, setOpenFaq] = useState(null);
@@ -96,18 +91,18 @@ const Admissions = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         alt="The Tagore School Campus"
-                        className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+                        className="w-full h-full object-cover "
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_P0ZQiM-qeNweVu9Y2BSAyAw_8UdQVUsucQJfzrJdvIq_Y5Xe3_weZE_iEzufdc2AZ80scN8Jpiwhz5CNAefbA31COPxb9oxTeJ9wgUhevl4h_TO49UyKNMZsnOQnYIxwXxQmzQSep5E3_IERVtR2LIj2nfyLow61ZO8bI5N31hI21h3QfIAVr0tvWbb3FSZiZqV5ULzb0dMAHXFNVTa2fuAvJO9sMmMzz2KIyzQCa8sJE6aFQw9PdYnYrt9wLA1okbmfFCIUIU"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-900/40 to-transparent" />
                 </div>
                 <div className="relative z-10 max-w-7xl mx-auto px-8 w-full text-white">
-                    <span className="text-red-400 font-bold tracking-[0.3em] uppercase text-xs mb-6 block font-body">
+                    <span className="text-[#800000] font-bold tracking-[0.3em] uppercase text-xs mb-6 block font-body">
                         Admissions 2024-25
                     </span>
                     <h1 className="font-headline text-6xl md:text-8xl font-black tracking-tighter max-w-3xl mb-8 leading-none">
                         A Legacy of <br />
-                        <span className="italic font-light">Modern Minds.</span>
+                        <span className="italic text-[#800000] font-light">Modern Minds.</span>
                     </h1>
                     <p className="text-xl text-white/80 max-w-xl leading-relaxed font-body">
                         Join a community where heritage meets innovation. Our admissions
