@@ -7,6 +7,8 @@ import Admissions from "../pages/Admissions";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact";
 import Results from "@/pages/Results";
+import ApplyNow from "@/pages/ApplyNow";
+import Dashboard from "@/pages/Admin/Dashboard";
 
 export default function AppRoutes() {
     return (
@@ -18,6 +20,8 @@ export default function AppRoutes() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/results" element={<Results />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/apply" element={<ApplyNow />} />
+            <Route path="/admin" element={<Dashboard />} />
         </Routes>
     );
 }

@@ -63,9 +63,11 @@ export default function Navbar() {
 
                 {/* Desktop Button */}
                 <div className="hidden md:block">
-                    <Button className="bg-[#800000] hover:bg-[#650000] text-white px-6">
-                        Apply Now
-                    </Button>
+                    <Link to="/apply">
+                        <button className="bg-[#800000] hover:bg-[#650000] text-white px-6 py-2 rounded-xl text-sm font-bold">
+                            Apply Now
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle Button */}
