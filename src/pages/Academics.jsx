@@ -1,8 +1,5 @@
 import React from 'react';
 
-/* ─────────────────────────────────────────────
-   DATA STRUCTURES
-───────────────────────────────────────────── */
 const CURRICULUM_TIERS = [
     {
         grades: "GRADES 1-5",
@@ -48,9 +45,6 @@ const FACULTY = [
     },
 ];
 
-/* ─────────────────────────────────────────────
-   COMPONENTS
-───────────────────────────────────────────── */
 
 const TierCard = ({ tier }) => (
     <div className="bg-white rounded-[2.5rem] overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
@@ -185,49 +179,83 @@ const Academics = () => {
                 </div>
             </section>
 
-            {/* Holistic Development Bento */}
-            <section className="py-32 bg-[#eeeeee]">
-                <div className="max-w-7xl mx-auto px-8">
-                    <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-20 text-center text-stone-900 font-headline">
-                        Holistic Development
-                    </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:h-[700px]">
-                        {/* Fine Arts */}
-                        <div className="md:col-span-8 bg-white rounded-[3rem] p-12 flex flex-col justify-between relative overflow-hidden group shadow-sm">
-                            <div className="z-10">
-                                <span className="material-symbols-outlined text-[#570000] text-6xl mb-8 block">palette</span>
-                                <h3 className="text-4xl font-black mb-4 font-headline text-stone-900">Fine Arts & Music</h3>
-                                <p className="text-slate-500 max-w-sm leading-relaxed font-body">
-                                    From classical violin to digital sculpture, arts are a core pillar of our century-old philosophy.
-                                </p>
+            <section className="py-24 bg-[#F9F7F2]">
+                <div className="max-w-7xl mx-auto px-6">
+                    {/* Section Header */}
+                    <div className="text-center mb-16">
+                        <h2 className="text-5xl md:text-6xl font-serif italic text-stone-900 mb-4">
+                            Holistic Development
+                        </h2>
+                        <div className="h-1 w-20 bg-[#570000] mx-auto rounded-full"></div>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:h-[650px]">
+
+                        {/* Fine Arts & Music Card */}
+                        <div className="lg:col-span-8 relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#fdfbfb] to-[#ebedee] p-10 md:p-16 shadow-2xl shadow-stone-200 group">
+                            {/* Soft Grain Overlay */}
+                            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/p6-dark.png')]"></div>
+
+                            <div className="relative z-10 flex flex-col h-full justify-between">
+                                <div>
+                                    <div className="w-16 h-16 bg-[#570000]/5 rounded-2xl flex items-center justify-center mb-8 border border-[#570000]/10">
+                                        <span className="material-symbols-outlined text-[#570000] text-4xl">palette</span>
+                                    </div>
+                                    <h3 className="text-4xl md:text-5xl font-serif text-stone-900 mb-6">Fine Arts & Music</h3>
+                                    <p className="text-stone-600 text-lg max-w-md leading-relaxed">
+                                        From classical violin to digital sculpture, arts are a core pillar of our century-old philosophy.
+                                    </p>
+                                </div>
+
+                                <div className="mt-12">
+                                    <button className="bg-stone-900 text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-[#570000] transition-colors duration-300 shadow-lg">
+                                        View Art Gallery
+                                    </button>
+                                </div>
                             </div>
-                            <div className="z-10 mt-10">
-                                <button className="bg-[#570000] text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest font-headline shadow-lg hover:shadow-red-900/20 transition-all">
-                                    View Art Gallery
-                                </button>
-                            </div>
+
+                            {/* The Fox Image - High contrast, slightly desaturated */}
                             <img
-                                alt="Arts"
-                                className="absolute right-0 bottom-0 w-1/2 h-3/4 object-cover opacity-10 group-hover:scale-110 group-hover:opacity-20 transition-all duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoRDYSWb8zsNpo5nLGm-kAtv6AJb8afhB55-Dztlm54nbZJHCnE_okaXo30Dwp9694R0ZsrcLuiekATa0_EEKGCGDbttxDmM-wuufngdMXjau45YrxYXknvPVg1MciQJxxSsVmOGf1Awyhc1mBI6FcdZHuL1Hz3a_ztByTPoVCFprTsofDCZm_rGMduWtJL2eM91N-_eXG69sEsangd8omJHbc-spPg6_K2D0jBTjKJdp3liXPSJOBuayeM9Ly5V9MY53dHpAkg88"
+                                alt="Artistic Fox"
+                                className="absolute right-[-10%] bottom-[-5%] w-2/3 md:w-1/2 h-auto object-contain opacity-40 group-hover:scale-105 group-hover:opacity-60 transition-all duration-1000 ease-out mix-blend-multiply"
+                                src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=800"
                             />
                         </div>
 
-                        {/* Athletics */}
-                        <div className="md:col-span-4 bg-[#570000] text-white rounded-[3rem] p-12 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-500 shadow-xl shadow-red-900/10">
-                            <div>
-                                <span className="material-symbols-outlined text-white text-6xl mb-8 block">sports_soccer</span>
-                                <h3 className="text-3xl font-black font-headline mb-4">Athletics</h3>
-                                <p className="opacity-70 font-body leading-relaxed">
-                                    Championship teams in swimming, soccer, and equestrian sports focusing on teamwork and grit.
-                                </p>
-                            </div>
-                            <div className="border-t border-white/20 pt-8 flex justify-between items-center">
-                                <span className="text-xs font-black uppercase tracking-widest font-headline">15 Varsity Teams</span>
-                                <span className="material-symbols-outlined">north_east</span>
+                        {/* Athletics Card */}
+                        <div className="lg:col-span-4 relative overflow-hidden rounded-[2.5rem] bg-[#570000] p-10 md:p-12 text-white shadow-2xl shadow-red-950/20 hover:translate-y-[-8px] transition-transform duration-500">
+                            {/* Subtle Texture/Pattern */}
+                            <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+
+                            <div className="relative z-10 h-full flex flex-col justify-between">
+                                <div>
+                                    <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-8 backdrop-blur-md border border-white/20">
+                                        <span className="material-symbols-outlined text-white text-3xl">sports_soccer</span>
+                                    </div>
+                                    <h3 className="text-4xl font-serif mb-6">Athletics</h3>
+                                    <p className="text-white/80 text-lg leading-relaxed font-light">
+                                        Championship teams in swimming, soccer, and equestrian sports focusing on teamwork and grit.
+                                    </p>
+
+                                    {/* Decorative Laurel Wreath Icon */}
+                                    <div className="mt-10 opacity-30">
+                                        <span className="material-symbols-outlined text-8xl">military_tech</span>
+                                    </div>
+                                </div>
+
+                                <div className="pt-8 border-t border-white/20 flex justify-between items-center group cursor-pointer">
+                                    <div>
+                                        <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/60 mb-1">Varsity Program</p>
+                                        <span className="text-lg font-bold">15 Varsity Teams</span>
+                                    </div>
+                                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#570000] transition-all duration-300">
+                                        <span className="material-symbols-outlined">arrow_outward</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
