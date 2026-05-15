@@ -237,8 +237,9 @@ const AcademicMosaic = () => {
             label: "Performing Arts", span: "col-span-2 row-span-1",
         },
         {
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDiRoRMv3_OGG7UhPs4pIdm5VT22duOx9CvSQGz4LVBf7QbWDjf_nGF4ZfLjl7SkdCP9aPJcaUH-QEWIWn0Lw5PCMJAgwtQmhTNRfw5nFoE-SQz4FDDyEtiRkNSyvgBSQmW71hdZRYNkOh9ZzB9QbJk9y-g9bgaFUZJd2LjfoPlV9PqAe-L1hHG6PWKyJbKQLpXNBBkvSQmlUKZ_2rZaOWLcRyiZV_hFzjpoEXY_EpqLfcPEcC-6GWFwlhtRLUCn8mjVHM",
-            label: "Sports", span: "col-span-1 row-span-1",
+            src: "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&q=80&w=1000",
+            label: "Sports",
+            span: "col-span-1 row-span-1",
         },
         {
             src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSHe7CY0sSCPr21kVSBMse5pWj5T4n5QDdkSCX99Iy21tG3YSLFEpyS0Eesjyb0S0lTB6c3siYnbMxjOhgFhgzAQqJUXf_5L98pKoxGRT1MDKd6eWrGeR2OysAm4hmL6UPp3h0UQCePLki6c4_F4zOp9Yy-m4QAhSoWuGEYJqFLR0t_XlVClMJthcJGuCJR19A4ErNsxNlwfHRypG_QztXyc6WZ1AtnZKwtfnWgFtzFRYQs1x2-brTFQ5iiPZS-P0nKIUO8CrYOSg",
